@@ -9,8 +9,8 @@ public class Main {
         String BD_USUARIO = "root";
         String BD_SENHA = "";
 
-	      try {
-	        c = DriverManager.getConnection(BD_URL, BD_USUARIO, BD_SENHA);
+	try {
+	  c = DriverManager.getConnection(BD_URL, BD_USUARIO, BD_SENHA);
           Statement smt = c.createStatement();
           String sql = "";
 
@@ -18,7 +18,7 @@ public class Main {
           sql = "DROP TABLE IF EXISTS funcionario";
           smt.executeUpdate(sql);
 
-	        // Criar tabela (cria uma relação funcionario)
+	  // Criar tabela (cria uma relação funcionario)
           sql = "CREATE TABLE funcionario(";
           sql += "nome VARCHAR(50) ";
           sql += ", sobrenome VARCHAR(50)";
